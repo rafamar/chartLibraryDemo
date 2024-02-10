@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="chartStyles.css">
+  <title>Botón con Chart.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <button class="chart-button" onclick="crearGraficoBarras()">Barras</button>
+  <button class="chart-button" onclick="crearGraficoLinea()">Linea</button>
+  <button class="chart-button" onclick="crearGraficoTarta()">Tarta</button>
+  <button class="chart-button" onclick="crearGraficoDonut()">Donut</button>
+  <button class="chart-button" onclick="crearGraficoAreaPolar()">Area Polar</button>
+  <button class="chart-button" onclick="crearGraficoBurbujas()">Burbujas</button>
+  <button class="chart-button" onclick="borrarGrafico()">Borrar grafico</button>
+  <div class="canvasContainer">
+    <canvas id="myChart"></canvas>
+  </div>
+<table id="tableOperationControls">
+  <tr>
+    <td class="tdNumberTitle"></td>
+    <td class="tdNumber">
+      <button class="chart-operation-button btnJanuary" onclick="addOne(0)">+</button>
+      <input type="number" id="numberJanuary" class="numberData" onchange="numberChanged(this,0)">
+      <button class="chart-operation-button btnJanuary" onclick="substractOne(0)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button class="chart-operation-button btnFebruary" onclick="addOne(1)">+</button>
+      <input type="number" id="numberFebruary" class="numberData" onchange="numberChanged(this,1)">
+      <button class="chart-operation-button btnFebruary" onclick="substractOne(1)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button class="chart-operation-button btnMarch" onclick="addOne(2)">+</button>
+      <input type="number" id="numberMarch" class="numberData" onchange="numberChanged(this,2)">
+      <button class="chart-operation-button btnMarch" onclick="substractOne(2)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button class="chart-operation-button btnApril" onclick="addOne(3)">+</button>
+      <input type="number" id="numberApril" class="numberData" onchange="numberChanged(this,3)">
+      <button class="chart-operation-button btnApril" onclick="substractOne(3)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button class="chart-operation-button btnMay" onclick="addOne(4)">+</button>
+      <input type="number" id="numberMay" class="numberData" onchange="numberChanged(this,4)">
+      <button class="chart-operation-button btnMay" onclick="substractOne(4)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button class="chart-operation-button btnJune" onclick="addOne(5)">+</button>
+      <input type="number" id="numberJune" class="numberData" onchange="numberChanged(this,5)">
+      <button class="chart-operation-button btnJune" onclick="substractOne(5)">-</button>
+    </td>
+  </tr>
+</table>
+<table class="tableOperationColors">
+  <tr>
+    <td class="tdColorTitle"></td>
+    <td class="tdColor">
+        <input type="color" id="colorPickerJanuary"  onchange="colorChanged(this, 0)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerFebruary"  onchange="colorChanged(this, 1)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerMarch"  onchange="colorChanged(this, 2)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerApril"  onchange="colorChanged(this, 3)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerMay"  onchange="colorChanged(this, 4)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerJune"  onchange="colorChanged(this, 5)">
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+

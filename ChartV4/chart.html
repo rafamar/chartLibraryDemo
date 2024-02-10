@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+  <script src="chartScript.js"></script>
+  <link rel="stylesheet" href="chartStyles.css">
+</head>
+<body>
+  <button onclick="crearGraficoBarras()">Crear gráfico barras</button>
+  <button onclick="crearGraficoLinea()">Crear gráfico linea</button>
+  <button onclick="crearGraficoTarta()">Crear gráfico tarta</button>
+  <button onclick="borrarGrafico()">Borrar gráfico</button>
+  <div class="canvasContainer">
+    <canvas id="myChart"></canvas>
+  </div>
+  <table id="tableOperationControls">
+    <tr>
+      <td class="tdNumberTitle"></td>
+      <td class="tdNumber">
+        <label for="numberEnero" class="labelData">Enero</label>
+        <input type="number" id="numberEnero" class="numberData" onchange="numberChanged(this,0)">
+      </td>
+      <td class="tdNumber">
+        <label for="numberFebrero" class="labelData">Febrero</label>
+        <input type="number" id="numberFebrero" class="numberData" onchange="numberChanged(this,1)">
+      </td>
+      <td class="tdNumber">
+        <label for="numberMarzo" class="labelData">Marzo</label>
+        <input type="number" id="numberMarzo" class="numberData" onchange="numberChanged(this,2)">
+      </td>
+      <td class="tdNumber">
+        <label for="numberAbril" class="labelData">Abril</label>
+        <input type="number" id="numberAbril" class="numberData" onchange="numberChanged(this,3)">
+      </td>
+      <td class="tdNumber">
+        <label for="numberMayo" class="labelData">Mayo</label>
+        <input type="number" id="numberMayo" class="numberData" onchange="numberChanged(this,4)">
+      </td>
+      <td class="tdNumber">
+        <label for="numberJunio" class="labelData">Junio</label>
+        <input type="number" id="numberJunio" class="numberData" onchange="numberChanged(this,5)">
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+

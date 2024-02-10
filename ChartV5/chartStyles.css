@@ -1,0 +1,95 @@
+
+.canvasContainer{
+    height:70%;
+    width: 70%;
+}
+
+.chart-button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  margin-bottom: 30px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:150px;
+}
+
+.chart-operation-button {
+  font-size:1.2em;
+  font-weight:bolder;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: navy;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  width:40px;
+  height: 40px;
+}
+
+.btnEnero{
+  border: 2px solid rgba(255, 99, 132, 1);
+  background-color: rgba(255, 99, 132, 0.2);
+}
+
+.btnFebrero{
+  border: 2px solid rgba(54, 162, 235, 1);
+  background-color: rgba(54, 162, 235, 0.2);
+}
+
+.btnMarzo{
+  border: 2px solid rgba(255, 206, 86, 1);
+  background-color: rgba(255, 206, 86, 0.2);
+}
+
+.btnAbril{
+  border: 2px solid rgba(75, 192, 192, 1);
+  background-color: rgba(75, 192, 192, 0.2);
+}
+
+.btnMayo{
+  border: 2px solid rgba(153, 102, 255, 1);
+  background-color: rgba(153, 102, 255, 0.2);
+}
+
+.btnJunio{
+  border: 2px solid rgba(255, 159, 64, 1);
+  background-color: rgba(255, 159, 64, 0.2);
+}
+
+.numberData{
+     min-width: 20px;
+     width: 50px; 
+}
+
+input[type="color"] {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.tdNumberTitle{
+  text-align: center;
+  width: 4%; 
+}
+
+.tdNumber{
+  min-width: 80px;
+  width: 215px; 
+}
+
+
+.tdColorTitle{
+  text-align: center;
+  width: 5.7%; 
+}
+
+.tdColor {
+  min-width: 140px;
+  width: 215px; 
+}
