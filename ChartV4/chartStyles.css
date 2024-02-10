@@ -1,0 +1,21 @@
+.canvasContainer{
+   height:70%;     /*proporción del alto de la página que ocupa nuestro canva*/
+   width: 70%;     /*/proporción del ancho de la página que ocupa nuestro canva*/
+}
+
+.tdNumberTitle{
+    width: 4%;             /*Ancho de la primera celda de la tabla. Está vacia, solamente supone un margen*/
+  }
+  
+.tdNumber{
+    min-width: 80px;         /*Mínimo del ancho en el caso de que se redimensione*/
+    width: 215px;            /*Ancho de cada celda*/
+    white-space: nowrap;     /* Evita que se rompa la línea entre label y numeric */
+    display: inline-block;   /* Muestra siempre en una línea los dos elementos*/
+    margin-right: 10px;      /* Espacio entre la etiqueta y el input */
+  }
+
+  .numberData{
+    width: 50px;           /*Ancho del control numérico*/
+    min-width: 20px;        /*Mínimo del ancho en el caso de que se redimensione*/
+}

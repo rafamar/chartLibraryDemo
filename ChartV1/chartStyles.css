@@ -1,0 +1,10 @@
+.canvasContainer{
+    height:70%;     /*proporción del alto de la página que ocupa nuestro canva*/
+    width: 70%;     /*/proporción del ancho de la página que ocupa nuestro canva*/
+}
+
+.source{
+    font-weight: lighter;  /*grosor de letra en el letrero de origen de datos*/
+    left:0px;              /*posicionameinto a la izquierde del letrero de origen de datos*/
+    bottom:0px;            /*posicionameinto parte inferior del letrero de origen de datos*/
+}

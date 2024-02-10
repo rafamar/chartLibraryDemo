@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+  <script src="chartScript.js"></script>
+  <link rel="stylesheet" href="chartStyles.css">
+</head>
+<body>
+  <button class="chart-button" onclick="crearGraficoBarras()">Barras</button>
+  <button class="chart-button" onclick="crearGraficoLinea()">Linea</button>
+  <button class="chart-button" onclick="crearGraficoTarta()">Tarta</button>
+  <button class="chart-button" onclick="crearGraficoDonut()">Donut</button>
+  <button class="chart-button" onclick="crearGraficoBurbujas()">Burbujas</button>
+  <button class="chart-button" onclick="crearGraficoAreaPolar()">Area Polar</button>
+  <button class="chart-button" onclick="borrarGrafico()">Borrar grafico</button>
+  <div class="canvasContainer">
+    <canvas id="myChart"></canvas>
+  </div>
+<table id="tableOperationControls">
+  <tr>
+    <td class="tdNumberTitle"></td>
+    <td class="tdNumber">
+      <button name='btnEneroAdd' id='btnEneroAdd' class="chart-operation-button btnEnero" onclick="addOne(0)">+</button>
+      <input type="number" id="numberEnero" class="numberData" onchange="numberChanged(this,0)">
+      <button name='btnEneroSubstract' id='btnEneroSubstract' class="chart-operation-button btnEnero" onclick="substractOne(0)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button name='btnFebreroAdd' id='btnFebreroAdd' class="chart-operation-button btnFebrero" onclick="addOne(1)">+</button>
+      <input type="number" id="numberFebrero" class="numberData" onchange="numberChanged(this,1)">
+      <button name='btnFebreroSubstract' id='btnFebreroSubstract' class="chart-operation-button btnFebrero" onclick="substractOne(1)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button name='btnMarzoAdd' id='btnMarzoAdd' class="chart-operation-button btnMarzo" onclick="addOne(2)">+</button>
+      <input type="number" id="numberMarzo" class="numberData" onchange="numberChanged(this,2)">
+      <button name='btnMarzoSubstract' id='btnMarzoSubstract' class="chart-operation-button btnMarzo" onclick="substractOne(2)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button name='btnAbrilAdd' id='btnAbrilAdd' class="chart-operation-button btnAbril" onclick="addOne(3)">+</button>
+      <input type="number" id="numberAbril" class="numberData" onchange="numberChanged(this,3)">
+      <button name='btnAbrilSubstract' id='btnAbrilSubstract' class="chart-operation-button btnAbril" onclick="substractOne(3)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button name='btnMayoAdd' id='btnMayoAdd' class="chart-operation-button btnMayo" onclick="addOne(4)">+</button>
+      <input type="number" id="numberMayo" class="numberData" onchange="numberChanged(this,4)">
+      <button name='btnMayoSubstract' id='btnMayoSubstract' class="chart-operation-button btnMayo" onclick="substractOne(4)">-</button>
+    </td>
+    <td class="tdNumber">
+      <button name='btnJunioAdd' id='btnJunioAdd' class="chart-operation-button btnJunio" onclick="addOne(5)">+</button>
+      <input type="number" id="numberJunio" class="numberData" onchange="numberChanged(this,5)">
+      <button name='btnJunioSubstract' id='btnJunioSubstract' class="chart-operation-button btnJunio" onclick="substractOne(5)">-</button>
+    </td>
+  </tr>
+</table>
+<table class="tableOperationColors">
+  <tr>
+    <td class="tdColorTitle"></td>
+    <td class="tdColor">
+        <input type="color" id="colorPickerEnero"  onchange="colorChanged(this, 0)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerFebrero"  onchange="colorChanged(this, 1)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerMarzo"  onchange="colorChanged(this, 2)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerAbril"  onchange="colorChanged(this, 3)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerMayo"  onchange="colorChanged(this, 4)">
+    </td>
+    <td class="tdColor">
+      <input type="color" id="colorPickerJunio"  onchange="colorChanged(this, 5)">
+    </td>
+  </tr>
+</table>
+  </div>
+</body>
+</html>
+
+
